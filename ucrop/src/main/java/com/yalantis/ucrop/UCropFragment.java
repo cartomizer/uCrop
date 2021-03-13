@@ -302,9 +302,7 @@ public class UCropFragment extends Fragment {
 
     };
 
-    /**
-     * Use {@link #mActiveWidgetColor} for color filter
-     */
+
     private void setupStatesWrapper(View view) {
         ImageView stateScaleImageView = view.findViewById(R.id.image_view_state_scale);
         ImageView stateRotateImageView = view.findViewById(R.id.image_view_state_rotate);
@@ -517,7 +515,7 @@ public class UCropFragment extends Fragment {
             TransitionManager.beginDelayedTransition((ViewGroup) getView().findViewById(R.id.ucrop_photobox), mControlsTransition);
         }
         mWrapperStateScale.findViewById(R.id.text_view_scale).setVisibility(stateViewId == R.id.state_scale ? View.VISIBLE : View.GONE);
-        mWrapperStateAspectRatio.findViewById(R.id.text_view_crop).setVisibility(stateViewId == R.id.state_aspect_ratio ? View.VISIBLE : View.GONE);
+        //mWrapperStateAspectRatio.findViewById(R.id.text_view_crop).setVisibility(stateViewId == R.id.state_aspect_ratio ? View.VISIBLE : View.GONE);
         mWrapperStateRotate.findViewById(R.id.text_view_rotate).setVisibility(stateViewId == R.id.state_rotate ? View.VISIBLE : View.GONE);
     }
 
